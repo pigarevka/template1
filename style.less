@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+.wrapper {
+    width: 1180px;
+    margin: auto;
+}
+
+@primaryColor: #445162;
+
+@primaryColorText: #333333;
+
+@ColorFont: #ffffff;
+
+@ColorFont2: #f5f5f5;
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 30px;
+    color: @primaryColor;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.header {
+    background-color: @primaryColor;
+    height: 330px;
+
+    .header__container {
+        .container;
+        height: 230px;
+        margin: 50px auto;
+
+        .header__text {
+            .container;
+            flex-direction: column;
+            width: 460px;
+            height: 225px;
+            color: @ColorFont; 
+
+            .header__title {
+                font-size: 60px;
+                font-weight: normal;
+            }
+
+            .header__list {
+                .container;
+                flex-direction: column;
+                height: 130px;
+                font-size: 20px;
+                list-style-image: url(img/check\ .png);
+                margin-left: 30px;
+            }
+        }
+
+        .header__square {
+            background-color: @ColorFont;
+            width: 475px;
+            height: 210px;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.about {
+    background-color: @ColorFont;
+    height: 350px;
+
+    .about__container {
+        .container;
+        margin: 50px auto;
+
+        .about__content {
+            .container;
+            flex-direction: column;
+            height: 200px;
+            width: 650px;
+
+            .about__title {
+                font-size: 30px;
+                font-weight: normal;
+                color: @primaryColor;
+            }
+    
+            .about__text {
+                font-size: 16px;
+                color: @primaryColorText;
+                line-height: 22px;
+            }
+        }
+
+        .about__square {
+            background-color: @primaryColor;
+            width: 430px;
+            height: 240px;
+        }
+    }
+}
+
+.pluses {
+    background-color: @ColorFont2;
+    height: 420px;
+
+    .pluses__title {
+        .title;
+    }
+
+    .pluses__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-image: url(img/square.png);
+
+        .pluses__item {
+            font-size: 16px;
+            width: 590px;
+            height: 100px;
+            color: @primaryColorText;
+        }
+    }
+}
+
+.scrinshots {
+    height: 485px;
+    background-color: @ColorFont;
+
+    .scrinshots__title {
+        .title;
+    }
+
+    .scrinshots__content {
+        display: flex;
+        flex-wrap: wrap;
+        
+        .scrinshots__container {
+            // margin: 0 20px 30px 0;
+            width: 570px;
+            height: 150px;
+
+            .scrinshots__square {
+                background-color: @primaryColor;
+                width: 200px;
+                height: 150px;
+                float:left;
+                margin-right: 20px;
+            }
+
+            .scrinshots__name {
+                font-size: 24px;
+                color: @primaryColor;
+            }
+
+            .scrinshots__text {
+                font-size: 16px;
+                color: @primaryColorText;
+            }
+        }
+    }
+}
+
+.reviews {
+    height: 425px;
+    background-color: @ColorFont2;
+
+    .reviews__title {
+        .title;
+    }
+
+    .reviews__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .reviews__container {
+            display: flex;
+            width: 575px;
+            height: 120px;
+            margin-bottom: 20px;
+
+           .reviews__circle {
+            background-color: @primaryColor;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            margin-right: 20px;
+           } 
+
+           .reviews__inner {
+               .container;
+               flex-direction: column;
+               background-color: #ebebeb;
+               width: 470px;
+               padding: 10px;
+
+             .reviews__text {
+                 font-size: 14px;
+                 color: @primaryColorText;
+                 font-style: italic;
+             } 
+             
+             .reviews__author {
+                 font-size: 14px;
+                 color: #989898;
+             }
+           }
+        }
+    }
+}
+
+.footer {
+    height: 25px;
+    background-color: @ColorFont2;
+
+    .footer__copyright {
+        font-size: 12px;
+        color: @primaryColor;
+        text-align: center;
+    }
+}
